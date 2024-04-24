@@ -33,7 +33,7 @@ To get the project up and running on your local machine, follow these steps:
     ```sh
     make install
 
-4. Once the dependencies are installed, you can start the application.
+4. Once the dependencies are installed, you can start the application
     ```sh
     make start
 
@@ -41,11 +41,11 @@ To get the project up and running on your local machine, follow these steps:
 After starting the application using the make start command, the application will open in your default web browser. If it does not open automatically, you can access the frontend by visiting http://localhost:8080 and the backend API at http://localhost:8000.
 
 ## Stopping the Application
-To stop the application servers, use the command:
+To stop the application servers
     ```sh
     make stop
 
 ## Cleaning Up
-To clean up compiled Python files and cache, you can run:
+To clean up compiled Python files and cache
     ```sh
     make clean
