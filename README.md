@@ -28,14 +28,37 @@ Below are some of the standout features of the JustEat-Restaurant-Finder applica
 ![Location List](screenshots/locationList.png)
 
 ## Project Structure
-- `backend/`: Contains all the server-side code including the API and utilities.
-  - `api/`: The RESTful API endpoints.
-  - `models/`: Data models for the application.
-- `frontend/`: All the client-side code.
-  - `css/`: Stylesheets for the application.
-  - `images/`: Images used within the application.
-  - `js/`: JavaScript files.
-  - `index.html`: Entry point for the web application.
+
+```
+.
+├── backend
+│   ├── api
+│   │   ├── __init__.py
+│   │   ├── main.py
+│   │   ├── models.py
+│   │   └── utils.py
+│   └── requirements.txt
+├── frontend
+│   ├── css
+│   │   └── style.css
+│   ├── images
+│   │   └── cutlery.png
+│   ├── js
+│   │   ├── app.js
+│   │   ├── config.js
+│   │   └── .eslintrc.js
+│   └── index.html
+├── screenshots
+│   ├── filterWindow.png
+│   ├── locationList.png
+│   ├── mapHighlights.gif
+│   ├── popUp.png
+│   └── searchBar.png
+├── .gitignore
+├── LICENSE
+├── Makefile
+└── README.md
+```
 
 ## Installation
 To get the project up and running on your local machine, follow these steps:
