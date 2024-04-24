@@ -13,7 +13,7 @@ JustEat-Restaurant-Finder is a web application designed to help users find resta
 Below are some of the standout features of the JustEat-Restaurant-Finder application, along with screenshots to give you a glimpse of the user interface:
 
 ### Interactive Map Display - *An interactive map that users can navigate to see restaurant locations plotted based on their search criteria.*
-![Interactive Map Display](screenshots/mapHighlights.gif)
+![Interactive Map Display](screenshots/mapHighlights.png)
 
 ### Search by Postcode - *A user-friendly search bar that allows users to find restaurants by entering a UK postcode.*
 ![Search by Postcode](screenshots/searchBar.png)
