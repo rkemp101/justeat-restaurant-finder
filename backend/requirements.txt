@@ -1,0 +1,7 @@
+fastapi==0.73.0
+pydantic==1.9.0
+requests==2.26.0
+geopy==2.2.0
+cachetools==4.2.4
+ratelimit==2.2.1
+uvicorn==0.15.0
