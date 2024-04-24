@@ -70,7 +70,7 @@ To get the project up and running on your local machine, follow these steps:
 
 2. Navigate to the cloned repository directory.
     ```sh
-    cd JustEat-Restaurant-Finder
+    cd justeat-restaurant-finder
     ```
 
 3. Use the Makefile to install dependencies.
