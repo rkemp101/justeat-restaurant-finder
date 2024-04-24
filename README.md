@@ -65,7 +65,7 @@ To get the project up and running on your local machine, follow these steps:
 
 1. Clone the repository to your local machine.
    ```sh
-   git clone <URL_to_this_repo>
+   git clone git@github.com:rkemp101/justeat-restaurant-finder.git
    ```
 
 2. Navigate to the cloned repository directory.
