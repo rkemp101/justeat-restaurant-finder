@@ -16,10 +16,31 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.get("/")
+async def root():
+    """
+    Root endpoint providing basic information about the API.
+    """
+    return {
+        "message": "Welcome to the Restaurant Finder API",
+        "endpoints": {
+            "/restaurants/{postcode}": "Fetch restaurants based on postcode, distance, cuisine types, and minimum rating."
+        }
+    }
+
 @app.get("/restaurants/{postcode}")
 async def get_restaurants(postcode: str, distance: Optional[int] = 3, cuisines: Optional[str] = Query(None), min_rating: Optional[int] = 3):
     """
     Endpoint to fetch restaurants based on postcode, optional distance, cuisine types, and minimum rating.
+
+    Args:
+    postcode (str): The postcode where restaurants are searched.
+    distance (Optional[int]): The distance from the postcode location within which to search for restaurants, defaults to 3 miles.
+    cuisines (Optional[str]): A pipe-separated list of desired cuisine types. For example, "italian|indian".
+    min_rating (Optional[int]): The minimum rating (out of 5) that the restaurant must have, defaults to 3.
+
+    Returns:
+    list: A list of restaurants that match the provided criteria, each represented as a dictionary.
     """
     # Obtain the geographic location from the postcode
     origin = get_location(postcode)
