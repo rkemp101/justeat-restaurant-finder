@@ -45,8 +45,7 @@ Below are some of the standout features of the JustEat-Restaurant-Finder applica
 │   │   └── cutlery.png
 │   ├── js
 │   │   ├── app.js
-│   │   ├── config.js
-│   │   └── .eslintrc.js
+│   │   └── config.js
 │   └── index.html
 ├── screenshots
 │   ├── filterWindow.png
@@ -117,13 +116,16 @@ The JustEat-Restaurant-Finder application could be improved in several ways:
   - **Service Layer Abstraction**: Introducing a service layer to abstract business logic from API routes, making the code cleaner and more testable.
   - **Utilizing Design Patterns**: Applying design patterns where appropriate to solve common problems in a standardized way.
   - **Independent Frontend and Backend Deployment**: Allowing the frontend and backend to be developed and deployed independently to improve the development workflow and enable easier scaling.
+  - **Backend Tests**: Introduce unit tests to the backend modules. Particularly important for independent useage as Mapbox API's Geocoder autocomplete currently validates the user input (e.g. UK postcode) on the client-side.
   - **Creating Libraries for Shared Logic**: If there are functionalities that could be shared across different parts of the application (or even across different projects), they could be turned into libraries.
   - **Implementing API Versioning**: Introducing version control for the API endpoints to ensure backward compatibility and make the transition smoother when introducing new features or breaking changes.
-
 - **Expansion to Other Regions**: Currently focused on the UK, the application could be expanded to include other regions by integrating additional APIs and considering local variations in postcode formatting and geolocation.
 - **User Authentication**: Implementing user accounts would allow for personalized experiences, such as saving favorite restaurants or custom search preferences.
-- **Advanced Filter Options**: Adding more sophisticated filtering options, such as price range, delivery options, or specific dietary requirements, would enhance the search functionality.
 - **Performance Optimization**: Further optimizations could be made for loading times and responsiveness, particularly when handling large volumes of restaurant data or map interactions.
-- **Mobile Responsiveness**: While the application may currently work on mobile devices, designing a mobile-specific interface could improve usability on smartphones and tablets.
-- **Accessibility Features**: Improving accessibility, such as keyboard navigation and screen reader compatibility, would make the application more inclusive.
-- **User Reviews and Ratings**: Integrating a system for users to leave their own reviews and ratings could provide a more community-driven approach to restaurant recommendations.
+- **Marker Improvements**: Introduce marker clusters for zoom-levels or areas with a high density of results. Rendering Restaurant logos may not be optimal for load times.
+- **Location Precision**: Postcode areas are less precise than street & postcode combinations. This can impact the results returned and behaviour of the search radius filter.
+- **Default Sorting**: Additional sorting methods may be considered, which may include:
+  - **Paid promotional spots.**
+  - **Logged in user preferences and purchase history.**
+  - **Similar user preferences.**
+- **Advanced Filter Options**: Adding more sophisticated filtering options, such as price range, delivery options, or specific dietary requirements, would enhance the search functionality.
