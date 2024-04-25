@@ -50,7 +50,7 @@ Below are some of the standout features of the JustEat-Restaurant-Finder applica
 ├── screenshots
 │   ├── filterWindow.png
 │   ├── locationList.png
-│   ├── mapHighlights.gif
+│   ├── mapHighlights.png
 │   ├── popUp.png
 │   └── searchBar.png
 ├── .gitignore
